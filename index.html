@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Resistor Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Resistor Calculator</h1>
+    </header>
+
+    <main>
+      <div id="main-container">
+        <div id="band-selector-container">
+          <form id="band-selector-form">
+            <div id="num-bands-radio">
+              <input
+                type="radio"
+                name="resistor-type"
+                value="four-bands"
+                id="four-bands-radio"
+                checked
+              />Four Bands
+              <input
+                type="radio"
+                name="resistor-type"
+                value="five-bands"
+                id="five-bands-radio"
+              />Five Bands
+            </div>
+            <div id="select-container"></div>
+          </form>
+        </div>
+
+        <div id="resistor-container">
+          <h3>Total Resistance: <span id="resistor-value"></span></h3>
+        </div>
+      </div>
+    </main>
+    <script src="dist/main.js"></script>
+  </body>
+</html>
